@@ -1,4 +1,7 @@
 {
+  "rewrites": [
+    { "source": "/medical-seo-ai/:path*", "destination": "/:path*" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
