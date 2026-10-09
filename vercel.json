@@ -1,6 +1,9 @@
 {
   "rewrites": [
-    { "source": "/medical-seo-ai/:path*", "destination": "/:path*" }
+    { "source": "/medical-seo-ai/:path*", "destination": "/:path*" },
+    { "source": "/dental-seo-ai/:path*", "destination": "https://dental-seo-ai-programs.vercel.app/:path*" },
+    { "source": "/medical-meta-advertising/:path*", "destination": "https://medical-meta-advertising-program.vercel.app/:path*" },
+    { "source": "/medical-google-ads/:path*", "destination": "https://medical-google-ads-program.vercel.app/:path*" }
   ],
   "redirects": [
     {
