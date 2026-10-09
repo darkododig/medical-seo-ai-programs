@@ -2,14 +2,19 @@
   "rewrites": [
     { "source": "/medical-seo-ai/:path*", "destination": "/:path*" }
   ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "medical-seo-ai-programs.vercel.app" }],
+      "destination": "https://programs.wisevu.com/medical-seo-ai/:path*",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow, noarchive"
-        }
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }
       ]
     }
   ]
